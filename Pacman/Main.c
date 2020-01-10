@@ -79,13 +79,13 @@ void UpdateGame() {
 			if (player.speed.x != 2) player.speed.x += 2;
 			player.speed.y = 0;
 		}
-		/* Player Logic */
+		/* Player Move Logic */
 		if (player.position.y >= 782) player.position.y = 781;
 		if (player.position.x >= 582) player.position.x = 581;
 		if (player.position.y <= 50) player.position.y = 51;
 		if (player.position.x <= 12) player.position.x = 13;
 
-		/* Ghost logic */
+		/* Ghost Move Logic */
 		if (pinky.position.y >= 800) pinky.position.y = 0;
 		if (pinky.position.x >= 600) pinky.position.x = 0;
 		if (pinky.position.y <= -1) pinky.position.y = 800;
@@ -109,7 +109,7 @@ void UpdateGame() {
 			&& player.position.y < (pinky.position.y + 10)
 			&& player.position.y + 10>(pinky.position.y))) gameOver = 0;
 
-		/* Pinky follow logic? */
+		/* Pinky Follow :ogic? */
 	}
 }
 
