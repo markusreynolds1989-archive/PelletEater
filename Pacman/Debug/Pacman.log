@@ -1,4 +1,4 @@
 ﻿  Main.c
 C:\Users\marsa\Documents\Code\C\Pacman\Pacman\Main.c(50,1): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\marsa\Documents\Code\C\Pacman\Pacman\Main.c(139,12): warning C4013: 'sprintf_s' undefined; assuming extern returning int
+C:\Users\marsa\Documents\Code\C\Pacman\Pacman\Main.c(140,12): warning C4013: 'sprintf_s' undefined; assuming extern returning int
   Pacman.vcxproj -> C:\Users\marsa\Documents\Code\C\Pacman\Debug\Pacman.exe
