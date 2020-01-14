@@ -1,6 +1,6 @@
 ﻿  Main.c
-C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(78,13): warning C4101: 'speed': unreferenced local variable
-C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(111,43): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
-C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(112,12): warning C4013: 'sprintf_s' undefined; assuming extern returning int
-C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(114,41): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(79,13): warning C4101: 'speed': unreferenced local variable
+C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(113,43): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(114,12): warning C4013: 'sprintf_s' undefined; assuming extern returning int
+C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Pacman\Main.c(116,41): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
   Pacman.vcxproj -> C:\Users\MR071411\Desktop\FunCode\CStuff\PelletEater\Debug\Pacman.exe

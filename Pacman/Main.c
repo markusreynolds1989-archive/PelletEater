@@ -31,6 +31,7 @@ enum playerSpeed {
 	left = -2,
 };
 
+
 void UpdateGame();
 void DrawGame();
 void InitGame();
@@ -41,8 +42,8 @@ int32_t gameOver = 1;
 int32_t score = 0;
 static Player player = { 0 };
 static Ghost pinky = { 0 };
-const int wallBuffer = 2;
-const int lineBuffer = 3;
+const int wallPadding = 2;
+const int linePadding = 3;
 static Wall topWall = { 44 , 64, 554, 64, 12 };
 static Wall leftWall = { 4, 58, 4, 800,  12 };
 static Wall rightWall = { 594, 58, 594, 800,  12 };
@@ -129,17 +130,17 @@ void UpdateDrawFrame() {
 
 void CheckPlayerWall() {
 	/* Player Wall Collision Logic */
-	if (player.position.x <= leftWall.startPos.x + leftWall.width + wallBuffer) {
-		player.position.x = leftWall.width + leftWall.startPos.x + lineBuffer;
+	if (player.position.x <= leftWall.startPos.x + leftWall.width + wallPadding) {
+		player.position.x = leftWall.width + leftWall.startPos.x + linePadding;
 	}
-	if (player.position.x >= rightWall.startPos.x - rightWall.width - wallBuffer) {
-		player.position.x = rightWall.startPos.x - rightWall.width - lineBuffer;
+	if (player.position.x >= rightWall.startPos.x - rightWall.width - wallPadding) {
+		player.position.x = rightWall.startPos.x - rightWall.width - linePadding;
 	}
-	if (player.position.y <= topWall.startPos.y + topWall.width + wallBuffer) {
-		player.position.y = topWall.startPos.y + topWall.width + lineBuffer;
+	if (player.position.y <= topWall.startPos.y + topWall.width + wallPadding) {
+		player.position.y = topWall.startPos.y + topWall.width + linePadding;
 	}
-	if (player.position.y >= bottomWall.startPos.y - bottomWall.width - wallBuffer) {
-		player.position.y = bottomWall.startPos.y - bottomWall.width - lineBuffer;
+	if (player.position.y >= bottomWall.startPos.y - bottomWall.width - wallPadding) {
+		player.position.y = bottomWall.startPos.y - bottomWall.width - linePadding;
 	}
 }
 
